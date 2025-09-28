@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery website</title>
+    <style>
+        body {
+margin: 10;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+text-align: center;
+}
+h1 {
+margin: 10px 0;
+}
+/* Photo Gallery */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+gap: 10px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+}
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 100px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+.gallery {
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+}
+    </style>
+</head>
+<body>
+  <h1>Nature blog photo gallery </h1> 
+  <div class="gallery">
+ <img src="2.jpg" alt ="destination 2">
+ <img src="3.jpg" alt ="destination 3">
+ <img src="4.jpg" alt ="destination 4">
+  </div> 
+</body>
+</html>
